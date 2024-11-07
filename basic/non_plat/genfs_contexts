@@ -259,6 +259,10 @@ genfscon sysfs /firmware/devicetree/base/chosen/aee,enable u:object_r:sysfs_aee_
 
 genfscon sysfs /kernel/ccci u:object_r:sysfs_ccci:s0
 
+# thermal
+genfscon sysfs /devices/virtual/powercap u:object_r:sysfs_therm:s0
+genfscon sysfs /class/powercap u:object_r:sysfs_therm:s0                                              
+
 # Date : 2018/06/15
 # Purpose : mtk EM touchscreen settings
 genfscon sysfs /module/tpd_setting        u:object_r:sysfs_tpd_setting:s0
